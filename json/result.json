@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "username": "floofy.dafloof@puppers.com",
+      "email": "floofy.dafloof@puppers.com",
+      "firstname": "Floofy",
+      "lastname": "Floof-floof",
+      "mobilePhone": "",
+      "sex": "",
+      "updateDate": null,
+      "profilePic": null,
+      "id": "5d1a14d0-4d06-40c9-b45d-330a731c8a63",
+      "status": 1,
+      "dtcreated": "2023-01-10T04:35:12.0963923",
+      "dtlastmodified": null,
+      "dterased": null
+    },
+    {
+      "username": "boydog.dash@puppers.com",
+      "email": "boydog.dash@puppers.com",
+      "firstname": "dash",
+      "lastname": "boydog",
+      "mobilePhone": "",
+      "sex": "",
+      "updateDate": null,
+      "profilePic": "profile-5.webp",
+      "id": "4448529f-1998-4f65-9deb-880c0a333f1d",
+      "status": 1,
+      "dtcreated": "2023-01-05T07:25:11.1394979",
+      "dtlastmodified": null,
+      "dterased": null
+    },
+    {
+      "username": "ronan.paredes@gmail.com",
+      "email": "ronan.paredes@gmail.com",
+      "firstname": "Ronan",
+      "lastname": "Paredes",
+      "mobilePhone": "",
+      "sex": "",
+      "updateDate": null,
+      "profilePic": null,
+      "id": "3d8e3f67-bbe1-4821-9ca7-9419f99c72a9",
+      "status": 1,
+      "dtcreated": "2023-01-18T07:21:55.959446",
+      "dtlastmodified": null,
+      "dterased": null
+    }
+  ]
+}

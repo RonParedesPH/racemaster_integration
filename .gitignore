@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+
+/publish
+/deploy
+/bin
+/obj
+/.vs
+*.zip
+*.bak
+*.log
+*.xls
+/.vscode
+node_modules/
+package-lock.json
+
+
+

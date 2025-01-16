@@ -1,0 +1,17 @@
+{
+  "name": "acornstorefront",
+  "version": "1.0.0",
+  "description": "Acorn StoreFront",
+  "main": "index.js",
+  "scripts": {
+    "live": "live-server -port=59746",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "dotnet serve -p 59797"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.13.0",
+    "live-server": "^1.2.2"
+  }
+}
