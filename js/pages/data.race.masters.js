@@ -117,7 +117,7 @@ if (elem!=null) {
   elem.addEventListener("click", (event) => {
     const toast = new _toasts()
     toast.Toast("Are you sure you want to download the masters worksheet", "bg-primary", true, 
-      () => { _onDownloadMaster });
+      () => { _onDownloadMaster() });
   });
 }
 
