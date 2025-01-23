@@ -13,7 +13,8 @@ class Routes {
     this._addRoute('Data/Items','pages.data.items.admin.html')
     this._addRoute('Data/Items List','pages.data.items.html')
     this._addRoute('Reports/Sales Reports','pages.reports.sales.html')
-    this._addRoute('Reports/Admin Reports','pages.reports.admin.html')
+    this._addRoute('RaceMaster/Dashboard','pages.race.dashboard.html')
+    this._addRoute('RaceMaster/Master Dataset','pages.race.masters.html')
   }
 
   _addRoute(name, target) {

@@ -6,7 +6,7 @@
   "scripts": {
     "live": "live-server -port=59746",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "dotnet serve -p 41023"
+    "start": "dotnet serve -p 41026"
   },
   "author": "",
   "license": "ISC",

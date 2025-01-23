@@ -55,6 +55,7 @@ class UserDomInject {
         //if (user.token ? 1 : 0) {
 
         // use the instance attached to window object: see user.js
+        
         if ((window.currentUser ? 1 : 0) && (window.currentUser.token ? 1 : 0)) {
             const user = window.currentUser;
             /* install handlers 
@@ -152,7 +153,10 @@ class UserDomInject {
                 let i = 0;
                 let headr = '';
                 let templat = '';
-                let items = [];
+                let items = [];        
+                const routes = new Routes();
+
+
                 user.routeList.forEach((r) => {
                     let item = `item__${i}`
                     if (headr !== r.Name.split('/')[0]) {
@@ -171,13 +175,13 @@ class UserDomInject {
                         `;
                     }
                     let titl = r.Name.split('/')[1];
-                    // let item_target = '#';
-                    // if (routes ? 1 : 0)
-                    //     item_target = routes.getTarget(r.Name)
+                    let item_target =  routes.getTarget(r.Name)
+                    if (item_target.length === 0)
+                        item_target = '#';
 
                     let tmp = templat.split('^--')[0] +
                         `<li>
-                            <a href="#" class="route" data-route="${r.Name}">
+                            <a href="${item_target}" class="route" data-route="${r.Name}">
                                 <span class="label">${titl}</span>
                             </a>
                             </li> ^--` +
