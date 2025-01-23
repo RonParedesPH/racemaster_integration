@@ -1,13 +1,12 @@
 
-var User;
-var Messages;
-var Toasts;
-var UserDomInject;
+//var User;
+//var Messages;
+//var Toasts;
+//var UserDomInject;
 
 
-class PagesLanding {
+class LandingPage {
     constructor() {
- 
     }
 }
 
@@ -52,31 +51,12 @@ class PagesLanding {
 
 
 //main closure
-const main = function() {
 
-    modulepool.preload([
-        // './user.js',
-        // './helpers/messages.js',
-        // './helpers/toasts.js',
-        './user.DomInject.js'
-    ], (modules) => {
-        modules.forEach((elem) => {
-            switch (elem.name) {
-                // case 'Messages':
-                //     Messages = elem;
-                //     break;
-                // case 'Toasts':
-                //     Toasts = elem;
-                    // break;
-                case 'UserDomInject':
-                    UserDomInject = elem;
-                    break;
-                // case 'User':
-                //     User = elem;
-            }
-        })
-
-        const r = new PagesLanding()
-        //r.init()
-    })
-}();
+mudPool.depends([
+    // './helpers/messages.js',
+    // './helpers/toasts.js',
+    './user.js',
+    './user.DomInject.js'
+], () => {
+    const r = new LandingPage();
+});

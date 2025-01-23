@@ -24,7 +24,30 @@ class AuthApi {
         this._URLMAINPATH = this._URLBASEPATH;
     }
 
-    Request_Login(formValues, callback, negcallback, alwayscallback) {
+    _xhRequestWithCallBack(callback, negcallback, alwayscallback, severecallback) {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4) {
+                if (this.status >= 200 && this.status <= 204) {
+                    if (typeof callback === "function") callback(this.responseText);
+                    if (typeof alwayscallback === "function") alwayscallback();
+                }
+                else if (this.status >= 400 && this.status <= 451) {
+                    if (typeof negcallback === "function") negcallback({status: this.status, statusText: this.statusText, responseText: this.responseText});
+                    if (typeof alwayscallback === "function") alwayscallback();
+                }
+                else if (this.status >= 500 || this.status == 0 ) {
+                    if (typeof severecallback === "function") severecallback({status: this.status, statusText: this.statusText, responseText: ''});
+                    if (typeof alwayscallback === "function") alwayscallback();
+                }
+            }
+        };
+
+        return xhttp;
+    }
+
+
+    Request_Login(formValues, callback, negcallback, alwayscallback, severecallback) {
         /*  fetch(this._path + "/profiles")
                   .then(response => response.json())
                   .then(data => console.log(data));
@@ -34,26 +57,11 @@ class AuthApi {
             Password: formValues.Password,
         };
 
-        let xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if (this.readyState === 4) {
-                if (this.status >= 200 && this.status <= 202) {
-                    if (typeof callback === "function") callback(this.responseText);
-                    if (typeof alwayscallback === "function") alwayscallback();
-                }
-                else if (this.status >= 400 && this.status <= 451) {
-                    if (typeof negcallback === "function") negcallback({status: this.status, statusText: this.statusText, responseText: this.responseText});
-                    if (typeof alwayscallback === "function") alwayscallback();
-                }
-                else if (this.status >= 500 || this.status == 0 ) {
-                    if (typeof negcallback === "function") negcallback({status: this.status, statusText: this.statusText, responseText: ''});
-                    if (typeof alwayscallback === "function") alwayscallback();
-                }
-            }
-        };
-        xhttp.open("POST", `${this._path}/${this._request_login_path}`, true);
-        xhttp.setRequestHeader('Content-type', 'application/json');
-        xhttp.send(JSON.stringify(data));
+        let xhr = this._xhRequestWithCallBack(callback, negcallback, alwayscallback, severecallback);
+
+        xhr.open("POST", `${this._path}/${this._request_login_path}`, true);
+        xhr.setRequestHeader('Content-type', 'application/json');
+        xhr.send(JSON.stringify(data));
         return;
 
     }

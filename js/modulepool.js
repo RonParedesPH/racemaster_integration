@@ -1,6 +1,9 @@
+var GlobalPool = (typeof GlobalPool == "undefined")? [] : GlobalPool;
+
 class ModulePool {
     constructor() {
-        this._pool = []
+        this._pool = GlobalPool;
+        this._singletons = []
 
         this._init();
     }
@@ -31,6 +34,27 @@ depends(moduleNames, bExecuteWhenComplete) {
     return teta
 }
 
+    Singleton(classname, instance) {
+        const exist = null
+        if (instance == 'undefined') {
+            exist = _find(classname, this._singletons)
+            if (exist == null) 
+                return null 
+            else 
+                return exist.instance
+        }
+        else {
+            exist = _find(classname, this._singletons)
+            if (exist == null) {
+                this._singletons.push({ name: classname, instance: instance })
+                return instance
+            }
+            else {
+                console.log("<<ModulePool: attempt to add a second instance of ${classname} to singletons list.>>")
+                return exist.instance
+            }
+        }
+    }
 
 
 // internals ----------------------------------------------
@@ -42,10 +66,10 @@ _asSingle(bExecute, moduleList) {
         bExecute(moduleList[0])
 }
 
-_find(moduleName) {
+_find(moduleName, arr) {
     let ret = null
-    this._pool.forEach((el)=> {
-        if (el.name===moduleName)
+    arr.forEach((el)=> {
+        if (el.path ===moduleName)
             ret = el
     } )
     return ret
@@ -55,26 +79,28 @@ _find(moduleName) {
         let ret = null;
 
         if (index < moduleNames.length) {
-            const exist = this._find(moduleNames[index])
+            const exist = this._find(moduleNames[index], this._pool)
             if (exist == null) {
                 ret = import(moduleNames[index]).then((dyn) => {
-                    this._pool.push({ name: moduleNames[index], module: dyn.default })
+                    this._pool.push({ path: moduleNames[index], name: dyn.default.name, module: dyn.default })
                     moduleList.push(dyn.default)
 
-                    //console.log(`${moduleNames[index]} imported dynamically using ModulePool.`)
+                    window[dyn.default.name] = dyn.default;
+
+                    console.log(`ModulePool: ${moduleNames[index]} imported dynamically first time.`)
                     index++
                     this._dynamicLoading(moduleNames, index, bExecuteWhenComplete, moduleList, spread)
 
                 })
                     .catch((err) => {
-                        console.log(`error in dynamic loading ${moduleNames[index]} - ${err.message}.`)
+                        console.log(`<<ModulePool: error in dynamic loading ${moduleNames[index]} - ${err.message}.>>`)
                         //throw('dynamic loading failed')
                     })
             }
             else {
                 moduleList.push(exist.module)
 
-                console.log(`${moduleNames[index]} was not imported, using previously loaded by ModulePool.`)
+                console.log(`ModulePool: ${moduleNames[index]} was not imported this time, using previously loaded instance from pool instead.`)
                 index++
                 this._dynamicLoading(moduleNames, index, bExecuteWhenComplete, moduleList, spread)
             }
@@ -93,4 +119,8 @@ _find(moduleName) {
 
 }
 
-var modulepool = new ModulePool()
+var mudPool;
+if (window.modulePool === undefined) {
+    window.modulePool = new ModulePool();
+    mudPool = window.modulePool;
+}

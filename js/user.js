@@ -81,8 +81,10 @@
     }
 
 }
-
-const moduleUser = new User()
-const _gxUser = moduleUser;
+const main = function () {
+    window.currentUser = new User();
+    window.currentUser.readFromStorage();
+    document.title = "Race App Sandbox";
+}();
 
 export default User;

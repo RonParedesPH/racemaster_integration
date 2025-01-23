@@ -105,7 +105,7 @@ class AuthLoginForm {
 //main closure
 const Auth = function() {
 
-    modulepool.preload([
+    mudPool.preload([
         './user.js',
         './helpers/messages.js',
         './helpers/toasts.js',

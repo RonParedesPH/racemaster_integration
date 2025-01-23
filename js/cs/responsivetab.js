@@ -8,7 +8,9 @@
 
 class ResponsiveTab {
   get options() {
-    return {};
+    return {
+      onTabClick : null
+    };
   }
 
   constructor(element, options = {}) {
@@ -85,6 +87,9 @@ class ResponsiveTab {
       });
     }
     event.currentTarget.classList.add('active');
+    if (typeof(this.settings.onTabClick)=="function") {
+      this.settings.onTabClick(event.currentTarget)
+    }
   }
 
   _addListeners() {
@@ -95,3 +100,5 @@ class ResponsiveTab {
     });
   }
 }
+
+export default ResponsiveTab
