@@ -206,15 +206,16 @@ class UserDomInject {
                     //const n = new Nav(document.getElementById("nav"));
                     //n._addListeners();
                 }
-
+                // create an executable code block than will be called at the proper
+                // timing based on wether the menuPlainInner property of Nav is already set
                 const block = function(delay) {
-                    console.log('delay at ' + delay)
+                    //console.log('delay at ' + delay)
                     if (window.nav.menuPlainInner !== undefined) {
                         const a = window.nav.menuPlainOuter.split(window.nav.menuPlainInner);
                         window.nav.menuPlainOuter = a[0] + window.nav.menuPlainInner + kite + a[1];
                         window.nav.RedrawMenuPlacement();                  
                     } 
-                    else console.log('called while undefined.' )
+                    //else console.log('called while undefined.' )
                 }
 
                 if (window.nav.menuPlainInner !== undefined) {
@@ -223,20 +224,15 @@ class UserDomInject {
                 else 
                     setTimeout( 
                         () =>  { block(200) }, 
-                        200);
+                        200);  // <-- call delay at 200ms
 
-                 console.log('user menu at userDomInject - Ok')
+                 //console.log('user menu at userDomInject - Ok')
             }
         }
         // else
-        //     window.location = "pages.authentication.login.html";
+        //     window.location = "pages.authentication.login.html";         //<---- activate this on production
 
         document.body.classList.add('acornPageReady');
-        // const root = document.querySelector('#root');
-        // if (root ? 1 : 0) {
-        //     root.classList.add('userDomInjectDone');
-        // }
-
     }
 
     //public
