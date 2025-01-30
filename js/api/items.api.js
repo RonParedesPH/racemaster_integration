@@ -1,6 +1,6 @@
 class ItemsApi {
     constructor() {
-        this._path = "http://stockroom.verityclouds.com/api";
+        this._path = "http://localhost:52764/api";
         this._token = "";
 
         this._request_categories_path = "itemcategories";

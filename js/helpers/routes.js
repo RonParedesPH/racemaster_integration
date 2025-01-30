@@ -7,8 +7,8 @@ class Routes {
   _init() {
     this._addRoute('Data/Items','pages.data.items.admin.html')
     this._addRoute('Data/Items List','pages.data.items.html')
-    this._addRoute('RaceMaster/Dashboard','pages.race.dashboard.html')
-    this._addRoute('RaceMaster/Master Dataset','pages.race.masters.html')
+    this._addRoute('Race App/Dashboard','pages.race.dashboard.html')
+    this._addRoute('Race App/Master Dataset','pages.race.masters.html')
   }
 
   _addRoute(name, target) {

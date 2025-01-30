@@ -1,7 +1,6 @@
 class Race_RoundsApi {
     constructor() {
-        this._path = //"http://localhost:52764/api";
-        "http://raceporting.verityclouds.com/api";
+        this._path = "http://localhost:52764/api";
         this._token = "";
 
         this._request_all_items_path = "rounds";

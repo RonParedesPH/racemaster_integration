@@ -18,7 +18,7 @@ class AuthApi {
         this._request_verify_info_path = "verifyinfo";
         this._request_verify_email_path = "verifyemail";
 
-        this._APPNAME = "RaceMaster Sandbox";
+        this._APPNAME = "Race App";
         this._URLBASEPATH = window.location.href.substring(0, window.location.href.lastIndexOf('/'))
         this._URLVERIFYPATH = this._URLBASEPATH + "/pages.authentication.verifyemail.html";
         this._URLMAINPATH = this._URLBASEPATH;

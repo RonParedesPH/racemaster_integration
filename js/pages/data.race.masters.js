@@ -66,7 +66,7 @@ mudPool.depends(
                 const res = JSON.parse(data);
                 const link = document.getElementById("hiddenLink");
                 link.href = `${api.root()}/${res}`; // Replace with your file URL
-                link.download = "RaceMasterList.xls"; // Replace with your desired file name
+                link.download = "Race AppList.xls"; // Replace with your desired file name
                 link.click();
               },
               (error) => {
@@ -85,7 +85,7 @@ mudPool.depends(
                 const res = JSON.parse(data);
                 const link = document.getElementById("hiddenLink");
                 link.href = `${api.root()}/${res}`; // Replace with your file URL
-                link.download = "RaceMasterList.xls"; // Replace with your desired file name
+                link.download = "Race AppList.xls"; // Replace with your desired file name
                 link.click();
               },
               (error) => {
