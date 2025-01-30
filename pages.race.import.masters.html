@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>RaceMaster App Sandbox | Master Lists</title>
+    <title>Coop App Sandbox | Import Masters</title>
     <meta name="description"
         content="A table enhancing plug-in for the jQuery Javascript library, adding sorting, paging and filtering abilities to plain HTML tables with minimal effort." />
     <!-- Favicon Tags Start -->
@@ -48,9 +48,6 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/base/loader.js"></script>
-    <style>
-        .hotlink { cursor : pointer }
-    </style>
 </head>
 
 <body>
@@ -70,7 +67,7 @@
                 <!-- Language Switch Start -->
                 <div class="language-switch-container">
                     <button class="btn btn-empty language-button dropdown-toggle" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        aria-haspopup="true" aria-expanded="false">
                         EN
                     </button>
                     <div class="dropdown-menu">
@@ -83,9 +80,9 @@
                 <!-- User Menu Start -->
                 <div class="user-container d-flex">
                     <a href="#" class="d-flex user position-relative" data-bs-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">
-                        <img class="profile" alt="profile" src="img/profile/profile-11.webp" />
-                        <div class="name"></div>
+                        aria-expanded="false">
+                        <img class="profile" alt="profile" src="img/profile/profile-9.webp" />
+                        <div class="name">Lisa Jackson</div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end user-menu wide">
                         <div class="row mb-3 ms-0 me-0">
@@ -190,7 +187,7 @@
                                         <a href="#">
                                             <i data-acorn-icon="gear" class="me-2" data-acorn-size="17"></i>
                                             <span class="align-middle" data-bs-toggle="modal"
-                                                  data-bs-target="#settings">Settings</span>
+                                                data-bs-target="#settings">Settings</span>
                                         </a>
                                     </li>
                                     <li>
@@ -226,40 +223,40 @@
                     </li>
                     <li class="list-inline-item">
                         <a href="#" data-bs-toggle="dropdown" data-bs-target="#notifications" aria-haspopup="true"
-                           aria-expanded="false" class="notification-button">
+                            aria-expanded="false" class="notification-button">
                             <div class="position-relative d-inline-flex">
                                 <i data-acorn-icon="bell" data-acorn-size="18"></i>
                                 <span class="position-absolute notification-dot rounded-xl"></span>
                             </div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end wide notification-dropdown scroll-out"
-                             id="notifications">
+                            id="notifications">
                             <div class="scroll">
                                 <ul class="list-unstyled border-last-none">
                                     <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
                                         <img src="img/profile/profile-1.webp"
-                                             class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
                                         <div class="align-self-center">
                                             <a href="#">Joisse Kaycee just sent a new comment!</a>
                                         </div>
                                     </li>
                                     <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
                                         <img src="img/profile/profile-2.webp"
-                                             class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
                                         <div class="align-self-center">
                                             <a href="#">New order received! It is total $147,20.</a>
                                         </div>
                                     </li>
                                     <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
                                         <img src="img/profile/profile-3.webp"
-                                             class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
                                         <div class="align-self-center">
                                             <a href="#">3 items just added to wish list by a user!</a>
                                         </div>
                                     </li>
                                     <li class="pb-3 pb-3 border-bottom border-separator-light d-flex">
                                         <img src="img/profile/profile-6.webp"
-                                             class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
+                                            class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="..." />
                                         <div class="align-self-center">
                                             <a href="#">Kirby Peters just sent a new message!</a>
                                         </div>
@@ -322,7 +319,6 @@
 
         <main>
             <div class="container">
-                <div class="row"></div>
                 <div class="row">
                     <div class="col">
                         <!-- Title and Top Buttons Start -->
@@ -330,180 +326,216 @@
                             <div class="row">
                                 <!-- Title Start -->
                                 <div class="col-12 col-md-7">
-                                    <h1 class="mb-0 pb-0 display-4" id="title">Master Lists</h1>
+                                    <h1 class="mb-0 pb-0 display-4" id="title">Import Masters</h1>
                                     <nav class="breadcrumb-container d-inline-block" aria-label="breadcrumb">
                                         <ul class="breadcrumb pt-0">
                                             <li class="breadcrumb-item"><a href="pages.landing.html">Home</a></li>
                                             <!-- <li class="breadcrumb-item"><a href="Interface.html">Interface</a></li>
-                                                                        <li class="breadcrumb-item"><a href="Interface.Plugins.html">Plugins</a>
-                                                                        </li>
-                                                                        <li class="breadcrumb-item"><a
-                                                                                href="Interface.Plugins.Datatables.html">Datatables</a></li> -->
+                                            <li class="breadcrumb-item"><a href="Interface.Plugins.html">Plugins</a>
+                                            </li>
+                                            <li class="breadcrumb-item"><a
+                                                    href="Interface.Plugins.Datatables.html">Datatables</a></li> -->
                                         </ul>
                                     </nav>
                                 </div>
                                 <!-- Title End -->
-                            
+
                                 <div class="alert d-none" role="alert" id="cardAlert"></div>
-                            
+
                                 <!-- Top Buttons Start -->
-                                <div class="col-12 col-md-5 d-flex align-items-start justify-content-end">
-                                <button type="button" class="btn btn-outline-primary w-100 w-md-auto"  id="download">
-                                    <span>Download Master List</span>
-                                </button><a class="hidden" id='hiddenLink'></a>
+                                <div class="col-12 col-md-5 d-flex align-items-start justify-content-end d-none">
+                                    <!-- Add New Button Start -->
+                                    <button type="button"
+                                        class="btn btn-outline-primary btn-icon btn-icon-start w-100 w-md-auto add-datatable">
+                                        <i data-acorn-icon="plus"></i>
+                                        <span>Add New</span>
+                                    </button>
+                                    <!-- Add New Button End -->
+                                    <!-- Check Button Start -->
+                                    <div class="btn-group ms-1 check-all-container">
+                                        <div class="btn btn-outline-primary btn-custom-control p-0 ps-3 pe-2"
+                                            id="datatableCheckAllButton">
+                                            <span class="form-check float-end">
+                                                <input type="checkbox" class="form-check-input"
+                                                    id="datatableCheckAll" />
+                                            </span>
+                                        </div>
+                                        <button type="button"
+                                            class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split"
+                                            data-bs-offset="0,3" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false" data-submenu></button>
+                                        <div class="dropdown-menu dropdown-menu-end">
+                                            <div class="dropdown dropstart dropdown-submenu">
+                                                <button
+                                                    class="dropdown-item dropdown-toggle tag-datatable caret-absolute disabled"
+                                                    type="button">
+                                                    Tag
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <button class="dropdown-item tag-done" type="button">Done</button>
+                                                    <button class="dropdown-item tag-new" type="button">New</button>
+                                                    <button class="dropdown-item tag-sale" type="button">Sale</button>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <button class="dropdown-item disabled delete-datatable" type="button">
+                                                Delete
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Check Button End -->
                                 </div>
                                 <!-- Top Buttons End -->
                             </div>
                         </div>
                         <!-- Title and Top Buttons End -->
                         <!-- Content Start -->
-                            <!-- Tab Row Start -->
-                            <div class="card mb-3">
+                        <section class="scroll-section" id="basic">
+                            <!-- <h2 class="small-title">Basic</h2> -->
+                            <div class="card mb-3 wizard" id="wizardTabs">
                                 <div class="card-header border-0 pb-0">
-                                    <ul class="nav nav-tabs nav-tabs-line card-header-tabs responsive-tabs" role="tablist" id="responsiveTabs">
+                                    <ul class="nav nav-tabs justify-content-center" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#first" role="tab" type="button"
+                                            <a class="nav-link text-center active" href="#basicFirst" role="tab" data-index="0"
                                                 aria-selected="true">
-                                                Racers
-                                            </button>
+                                                <div class="mb-1 title d-none d-sm-block">Step 1 - Upload</div>
+                                            </a>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#second" role="tab" type="button"
-                                                aria-selected="false">Teams</button>
+                                            <a class="nav-link text-center" href="#basicSecond" role="tab" data-index="1">
+                                                <div class="mb-1 title d-none d-sm-block">Step 2 - Review </div>
+                                            </a>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#third" role="tab" type="button"
-                                                aria-selected="false">Race Class</button>
+                                            <a class="nav-link text-center" href="#basicThird" role="tab" data-index="2">
+                                                <div class="mb-1 title d-none d-sm-block">Step 3 - Data Validation</div>
+                                            </a>
                                         </li>
-                                        <li class="nav-item" role="presentation">
-                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#fourth" role="tab" type="button"
-                                                aria-selected="false">Rounds</button>
-                                        </li>
-                                        <!-- An empty list to put overflowed links -->
-                                        <li class="nav-item dropdown ms-auto pe-0 d-none responsive-tab-dropdown">
-                                            <button class="btn btn-icon btn-icon-only btn-foreground mt-2" type="button" data-bs-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">
-                                                <i data-acorn-icon="more-horizontal"></i>
-                                            </button>
-                                            <ul class="dropdown-menu mt-2 dropdown-menu-end"></ul>
+                                        <li class="nav-item d-none" role="presentation">
+                                            <a class="nav-link text-center" href="#basicLast" role="tab" data-index="3"></a>
                                         </li>
                                     </ul>
                                 </div>
+                                <div class="card-body sh-35">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active show" id="basicFirst" role="tabpanel">
+                                            <h3 class="card-title"><b>Upload</b></h3>
+                                            <p class="card-text text-alternate mb-4">Click on the browse button below and select your race
+                                                masters
+                                                worksheet to
+                                                upload.</p>
+                                            <form>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="basicSecond" role="tabpanel">
+                                            <h3 class="card-title"><b>Review</b></h3>
+                                            <p class="card-text text-alternate mb-4">"Review the extracted data in the lists below.
+                                                Then click next to validate.</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="basicThird" role="tabpanel">
+                                            <h5 class="card-title">Third Title</h5>
+                                            <p class="card-text text-alternate mb-4" id="validationResult">With supporting text below as a natural lead-in to
+                                                additional content.</p>
 
+                                        </div>
+                                        <div class="tab-pane fade" id="basicLast" role="tabpanel">
+                                            <div class="text-center mt-5">
+                                                <h5 class="card-title">Import completed!</h5>
+                                                <p class="card-text text-alternate mb-4">Your import process completed successfully!</p>
+                                                <button class="btn btn-icon btn-icon-start btn-primary btn-reset" type="button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                                        fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" class="acorn-icons acorn-icons-rotate-left undefined">
+                                                        <path
+                                                            d="M3.67358 13C4.79705 15.3649 7.20756 17 9.99995 17C13.8659 17 17 13.866 17 10C17 6.13401 13.8659 3 9.99995 3C7.20756 3 4.79705 4.63505 3.67358 7">
+                                                        </path>
+                                                        <path d="M6.12085 7.38074L2.90583 8.2422L1.99996 4.86146"></path>
+                                                    </svg>
+                                                    <span>Reset</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-center border-0 pt-1">
+                                    <button class="btn btn-icon btn-icon-start btn-outline-primary btn-prev d-none" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                            class="acorn-icons acorn-icons-chevron-left undefined">
+                                            <path d="M13 16L7.35355 10.3536C7.15829 10.1583 7.15829 9.84171 7.35355 9.64645L13 4"></path>
+                                        </svg>
+                                        <span>Back</span>
+                                    </button>
+                                    <button class="btn btn-icon btn-icon-end btn-outline-primary btn-next" type="button" id="nextButton">
+                                        <span>Next</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                            class="acorn-icons acorn-icons-chevron-right undefined">
+                                            <path d="M7 4L12.6464 9.64645C12.8417 9.84171 12.8417 10.1583 12.6464 10.3536L7 16"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                            <!-- Tab Row End -->
-                            <!-- Table Card Begin -->
-                            <div>
-                            </div>
-                             <!-- Table Card end -->
+                        </section>
 
+
+                        <div class="card mb-3">
+                            <div class="card-header border-0 pb-0">
+                                <ul class="nav nav-tabs nav-tabs-line card-header-tabs responsive-tabs" role="tablist"
+                                    id="responsiveTabs">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#first"
+                                            role="tab" type="button" aria-selected="true">
+                                            Racers
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#second"
+                                            role="tab" type="button" aria-selected="false">Teams</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#third" role="tab"
+                                            type="button" aria-selected="false">Race Class</button>
+                                    </li>
+
+                                    <!-- An empty list to put overflowed links -->
+                                    <li class="nav-item dropdown ms-auto pe-0 d-none responsive-tab-dropdown">
+                                        <button class="btn btn-icon btn-icon-only btn-foreground mt-2" type="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i data-acorn-icon="more-horizontal"></i>
+                                        </button>
+                                        <ul class="dropdown-menu mt-2 dropdown-menu-end"></ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="card-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active show" id="first" role="tabpanel">
+                                        <h4 class="card-title">Racers Master List</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to
+                                            additional content.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="second" role="tabpanel">
+                                        <h4 class="card-title">Teams List</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to
+                                            additional content.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="third" role="tabpanel">
+                                        <h4 class="card-title">Race Class List</h4>
+                                        <p class="card-text">With supporting text below as a natural lead-in to
+                                            additional content.</p>
+                                    </div>
+
+                                </div>
+                            </div> -->
+                        </div>
 
 
 
                         <div class="data-table-rows slim">
                             <!-- Controls Start -->
                             <div class="row">
-                                <!-- Search Start -->
-                                <div class="col-sm-12 col-md-5 col-lg-3 col-xxl-2 mb-1">
-                                    <div class="d-inline-block float-md-start me-1 mb-1 search-input-container w-100 shadow bg-foreground">
-                                        <input class="form-control datatable-search" placeholder="Search"
-                                               data-datatable="#datatableRacers" data-datatable-shared="true"/>
-                                        <span class="search-magnifier-icon">
-                                            <i data-acorn-icon="search"></i>
-                                        </span>
-                                        <span class="search-delete-icon d-none">
-                                            <i data-acorn-icon="close"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <!-- Search End -->
-
-                                <div class="col-sm-12 col-md-7 col-lg-9 col-xxl-10 text-end mb-1">
-                                    <div class="d-inline-block me-0 me-sm-3 float-start float-md-none ">
-                                        <div class="d-none">
-                                            <!-- Add Button Start -->
-                                            <button class="btn btn-icon btn-icon-only btn-foreground-alternate shadow add-datatable d-none"
-                                                    data-bs-delay="0" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                    title="Add" type="button">
-                                                <i data-acorn-icon="plus"></i>
-                                            </button>
-                                            <!-- Add Button End -->
-                                        </div>
-
-
-                                        <!-- Edit Button Start -->
-                                        <button class="btn btn-icon btn-foreground-alternate shadow edit-datatable disabled d-none"
-                                                data-bs-delay="0" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                title="Edit" type="button">
-                                            <i data-acorn-icon="crop"></i>
-                                            <span>View Details</span>
-                                        </button>
-                                        <!-- Edit Button End -->
-                                        <!-- Delete Button Start -->
-                                        <button class="btn btn-icon btn-icon-only btn-foreground-alternate shadow disabled delete-datatable d-none"
-                                                data-bs-delay="0" data-bs-toggle="tooltip" data-bs-placement="top"
-                                                title="Delete" type="button">
-                                            <i data-acorn-icon="bin"></i>
-                                        </button>
-                                        <!-- Delete Button End -->
-                                    </div>
-                                    <div class="d-inline-block">
-                                        <div class="d-none">
-                                            <!-- Print Button Start -->
-                                            <button class="btn btn-icon btn-icon-only btn-foreground-alternate shadow datatable-print"
-                                                    data-bs-delay="0" data-datatable="#datatableRowsAjax"
-                                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Print"
-                                                    type="button">
-                                                <i data-acorn-icon="print"></i>
-                                            </button>
-                                            <!-- Print Button End -->
-                                            <!-- Export Dropdown Start -->
-                                            <div class="d-inline-block datatable-export"
-                                                 data-datatable="#datatableRowsAjax">
-                                                <button class="btn p-0" data-bs-toggle="dropdown" type="button"
-                                                        data-bs-offset="0,3">
-                                                    <span class="btn btn-icon btn-icon-only btn-foreground-alternate shadow dropdown"
-                                                          data-bs-delay="0" data-bs-placement="top"
-                                                          data-bs-toggle="tooltip" title="Export">
-                                                        <i data-acorn-icon="download"></i>
-                                                    </span>
-                                                </button>
-                                                <div class="dropdown-menu shadow dropdown-menu-end">
-                                                    <button class="dropdown-item export-copy"
-                                                            type="button">
-                                                        Copy
-                                                    </button>
-                                                    <button class="dropdown-item export-excel"
-                                                            type="button">
-                                                        Excel
-                                                    </button>
-                                                    <button class="dropdown-item export-cvs" type="button">Cvs</button>
-                                                </div>
-                                            </div>
-                                            <!-- Export Dropdown End -->
-                                        </div>
-
-
-                                        <!-- Length Start -->
-                                        <div class="dropdown-as-select d-inline-block datatable-length"
-                                             data-datatable="#datatableRacers" data-childSelector="span" data-datatable-shared="true">
-                                            <button class="btn p-0 shadow" type="button" data-bs-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false" data-bs-offset="0,3">
-                                                <span class="btn btn-foreground-alternate dropdown-toggle"
-                                                      data-bs-toggle="tooltip" data-bs-placement="top" data-bs-delay="0"
-                                                      title="Item Count">
-                                                    10 Items
-                                                </span>
-                                            </button>
-                                            <div class="dropdown-menu shadow dropdown-menu-end">
-                                                <a class="dropdown-item" href="#">5 Items</a>
-                                                <a class="dropdown-item active" href="#">10 Items</a>
-                                                <a class="dropdown-item" href="#">20 Items</a>
-                                            </div>
-                                        </div>
-                                        <!-- Length End -->
-                                    </div>
-                                </div>
                             </div>
                             <!-- Controls End -->
                             <!-- Table Start -->
@@ -516,8 +548,7 @@
                                             <th class="text-muted text-small text-uppercase">Car Details</th>
                                             <th class="text-muted text-small text-uppercase">Race Class</th>
                                             <th class="text-muted text-small text-uppercase">Team</th>
-                                            <th class="text-muted text-small text-uppercase">Date Added</th>
-                                       </tr>
+                                        </tr>
                                     </thead>
                                 </table>
                             </div>
@@ -527,35 +558,17 @@
                                         <tr>
                                             <th class="text-muted text-small text-uppercase">Name</th>
                                             <th class="text-muted text-small text-uppercase">Description</th>
-                                           <th class="text-muted text-small text-uppercase">Date Added</th>
-
-                                       </tr>
+                                        </tr>
                                     </thead>
                                 </table>
                             </div>
-                            <div class="data-table-responsive-wrapper"style="display:none">
+                            <div class="data-table-responsive-wrapper" style="display:none">
                                 <table id="datatableClass" class="data-table nowrap w-100">
                                     <thead>
                                         <tr>
                                             <th class="text-muted text-small text-uppercase">Code</th>
                                             <th class="text-muted text-small text-uppercase">Description</th>
-                                           <th class="text-muted text-small text-uppercase">Date Added</th>
-
-                                       </tr>
-                                    </thead>
-                                </table>
-                            </div>
-                            <div class="data-table-responsive-wrapper"style="display:none">
-                                <table id="datatableRounds" class="data-table nowrap w-100">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-muted text-small text-uppercase">Name</th>
-                                            <th class="text-muted text-small text-uppercase">Date</th>
-                                            <th class="text-muted text-small text-uppercase">Venue</th>
-                                           <th class="text-muted text-small text-uppercase">Date Added</th>
-
-                                           <th class="text-muted text-small text-uppercase">Worksheet</th>
-                                       </tr>
+                                        </tr>
                                     </thead>
                                 </table>
                             </div>
@@ -564,13 +577,13 @@
                         <!-- Content End -->
                         <!-- Add Edit Modal Start -->
                         <div class="modal modal-right fade" id="addEditModal" tabindex="-1" role="dialog"
-                             aria-labelledby="modalTitle" aria-hidden="true">
+                            aria-labelledby="modalTitle" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h4 class="modal-title" id="modalTitle">Add New</h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                            aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="alert alert-secondary d-none" role="alert" id="addEditModalAlert">
@@ -624,13 +637,13 @@
                         <!-- Editor Modal End -->
                         <!-- Add Edit Modal Start -->
                         <div class="modal modal-center fade" id="editorModal" tabindex="-1" role="dialog"
-                             aria-labelledby="modalTitle" aria-hidden="true">
+                            aria-labelledby="modalTitle" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h4 class="modal-title" id="modalTitle">Add New</h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                                            aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
@@ -647,7 +660,8 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <label class="mb-3 top-label">
-                                                            <input name="DateSold" class="form-control text-end datepicker" id="dateSold">
+                                                            <input name="DateSold"
+                                                                class="form-control text-end datepicker" id="dateSold">
                                                             <span>DATE SOLD</span>
                                                         </label>
                                                     </div>
@@ -663,7 +677,7 @@
                                                     <div class="col-md-6">
                                                         <label class="mb-3 top-label">
                                                             <input name="SoldToDistributorName" class="form-control"
-                                                                   readonly>
+                                                                readonly>
                                                             <span>SOLD TO - EMPOWER NAME</span>
                                                         </label>
                                                     </div>
@@ -684,41 +698,42 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-12 d-flex align-items-start justify-content-end editor-buttons-wrapper">
+                                                <div
+                                                    class="col-12 d-flex align-items-start justify-content-end editor-buttons-wrapper">
                                                     <!-- Add New Line Button Start -->
                                                     <button title="Add Line" type="button" id="controlAddLine"
-                                                            class="btn btn-sm btn-outline-primary btn-icon btn-icon-start me-1 edit-header">
+                                                        class="btn btn-sm btn-outline-primary btn-icon btn-icon-start me-1 edit-header">
                                                         <i data-acorn-icon="add"></i>
                                                         <span>Add New Line</span>
                                                     </button>
                                                     <!-- Add New Line Button End -->
                                                     <!-- Add New Button Start -->
                                                     <button title="Edit Sales Invoice" type="button"
-                                                            id="controlEditorEdit"
-                                                            class="btn btn-sm btn-outline-primary btn-icon btn-icon-start me-1 edit-header">
+                                                        id="controlEditorEdit"
+                                                        class="btn btn-sm btn-outline-primary btn-icon btn-icon-start me-1 edit-header">
                                                         <i data-acorn-icon="edit"></i>
                                                         <span>Edit</span>
                                                     </button>
                                                     <!-- Add New Button End -->
                                                     <!-- Delete Button Start -->
                                                     <button title="Delete Sales Invoice" type="button"
-                                                            id="controlEditorDelete"
-                                                            class="btn btn-sm btn-outline-danger btn-icon btn-icon-start me-1 delete-header">
+                                                        id="controlEditorDelete"
+                                                        class="btn btn-sm btn-outline-danger btn-icon btn-icon-start me-1 delete-header">
                                                         <i data-acorn-icon="bin"></i>
                                                         <span>Delete</span>
                                                     </button>
                                                     <!-- Delete Button End -->
                                                     <!-- Save Button Start -->
                                                     <button title="Save changes" type="submit" id="controlEditorSave"
-                                                            class="btn btn-sm btn-outline-primary btn-icon btn-icon-start me-1 save-header">
+                                                        class="btn btn-sm btn-outline-primary btn-icon btn-icon-start me-1 save-header">
                                                         <i data-acorn-icon="disk"></i>
                                                         <span>Save Changes</span>
                                                     </button>
                                                     <!-- Save Button End -->
                                                     <!-- Save Button Start -->
                                                     <button title="Cancel changes" type="button"
-                                                            id="controlEditorCancel"
-                                                            class="btn btn-sm btn-primary btn-icon btn-icon-start me-1 cancel-header">
+                                                        id="controlEditorCancel"
+                                                        class="btn btn-sm btn-primary btn-icon btn-icon-start me-1 cancel-header">
                                                         <i data-acorn-icon="disk"></i>
                                                         <span>Cancel Changes</span>
                                                     </button>
@@ -729,7 +744,7 @@
                                         <!-- Table Start -->
                                         <div class="data-table-responsive-wrapper mt-3">
                                             <table class="data-table table table-striped table-hover nowrap w-100"
-                                                   id="tableEditor">
+                                                id="tableEditor">
                                                 <thead>
                                                     <tr>
                                                         <th class="text-muted text-small text-uppercase w-25">
@@ -758,7 +773,8 @@
                                                 <div class="row g-3">
                                                     <div class="col-md-6">
                                                         <label class="mb-3 top-label">
-                                                            <input name="ItemCode" class="form-control" id="itemCode_input">
+                                                            <input name="ItemCode" class="form-control"
+                                                                id="itemCode_input">
                                                             <span>ITEM CODE</span>
                                                         </label>
                                                     </div>
@@ -789,14 +805,15 @@
                                                     <input name="ItemId" class="form-control d-none">
                                                     <!-- Save Button Start -->
                                                     <button title="Save changes" type="submit" id="controlSaveLineEdit"
-                                                            class="btn btn-sm btn-outline-primary btn-icon btn-icon-start me-1">
+                                                        class="btn btn-sm btn-outline-primary btn-icon btn-icon-start me-1">
                                                         <i data-acorn-icon="disk"></i>
                                                         <span>Save Line</span>
                                                     </button>
                                                     <!-- Save Button End -->
                                                     <!-- Save Button Start -->
-                                                    <button title="Cancel changes" type="button" id="controlCancelLineEdit"
-                                                            class="btn btn-sm btn-primary btn-icon btn-icon-start me-1">
+                                                    <button title="Cancel changes" type="button"
+                                                        id="controlCancelLineEdit"
+                                                        class="btn btn-sm btn-primary btn-icon btn-icon-start me-1">
                                                         <i data-acorn-icon="disk"></i>
                                                         <span>Cancel Line</span>
                                                     </button>
@@ -845,79 +862,10 @@
         </footer>
         <!-- Layout Footer End -->
     </div>
-    <!-- Modal  Launch Xlarge-->
-    <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Sales Order</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-4">
-                                <label class="mb-3 top-label">
-                                    <input name="ControlNumber" class="form-control">
-                                    <span>INVOICE NUMBER</span>
-                                </label>
-                            </div>
-                            <div class="col-md-4">
-                                <label class="mb-3 top-label">
-                                    <input name="DateSold" class="form-control">
-                                    <span>DATE SOLD</span>
-                                </label>
-                            </div>
-                            <div class="col-md-4">
-                                <label class="mb-3 top-label">
-                                    <input name="Branch" class="form-control">
-                                    <span>BRANCH</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-md-4">
-                                <label class="mb-3 top-label">
-                                    <input name="SoldToDistributorNumber" class="form-control">
-                                    <span>SOLDTO - EMPOWER NUMBER</span>
-                                </label>
-                            </div>
-                            <div class="col-md-4">
-                                <label class="mb-3 top-label">
-                                    <input name="SoldToDistributorName" class="form-control">
-                                    <span>SOLD TO - EMPOWER NAME</span>
-                                </label>
-                            </div>
-                    </form>
-                    <!-- Table Start -->
-                    <div class="data-table-responsive-wrapper">
-                        <table id="datatableForm" class="data-table nowrap w-100">
-                            <thead>
-                                <tr>
-                                    <th class="text-muted text-small text-uppercase">Number</th>
-                                    <th class="text-muted text-small text-uppercase">Name</th>
-                                    <th class="text-muted text-small text-uppercase">Car Details</th>
-                                    <th class="text-muted text-small text-uppercase">Race Class</th>
-                                    <th class="text-muted text-small text-uppercase">Date Created</th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>
-                    <!-- Table End -->
-                </div>
 
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- Modal  Launch Large-->
     <!-- Theme Settings Modal Start -->
     <div class="modal fade modal-right scroll-out-negative" id="settings" data-bs-backdrop="true" tabindex="-1"
-         role="dialog" aria-labelledby="settings" aria-hidden="true">
+        role="dialog" aria-labelledby="settings" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable full" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -927,6 +875,315 @@
 
                 <div class="modal-body">
                     <div class="scroll-track-visible">
+                        <div class="mb-5" id="color">
+                            <label class="mb-3 d-inline-block form-label">Color</label>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap mb-3">
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="light-blue"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="blue-light"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">LIGHT BLUE</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="dark-blue"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="blue-dark"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">DARK BLUE</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap mb-3">
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="light-teal"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="teal-light"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">LIGHT TEAL</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="dark-teal"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="teal-dark"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">DARK TEAL</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap mb-3">
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="light-sky"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="sky-light"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">LIGHT SKY</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="dark-sky"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="sky-dark"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">DARK SKY</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap mb-3">
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="light-red"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="red-light"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">LIGHT RED</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="dark-red"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="red-dark"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">DARK RED</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap mb-3">
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="light-green"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="green-light"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">LIGHT GREEN</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="dark-green"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="green-dark"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">DARK GREEN</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap mb-3">
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="light-lime"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="lime-light"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">LIGHT LIME</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="dark-lime"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="lime-dark"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">DARK LIME</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap mb-3">
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="light-pink"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="pink-light"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">LIGHT PINK</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="dark-pink"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="pink-dark"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">DARK PINK</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap mb-3">
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="light-purple"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="purple-light"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">LIGHT PURPLE</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="dark-purple"
+                                    data-parent="color">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow color">
+                                        <div class="purple-dark"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">DARK PURPLE</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mb-5" id="navcolor">
+                            <label class="mb-3 d-inline-block form-label">Override Nav Palette</label>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap">
+                                <a href="#" class="flex-grow-1 w-33 option col" data-value="default"
+                                    data-parent="navcolor">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow">
+                                        <div class="figure figure-primary top"></div>
+                                        <div class="figure figure-secondary bottom"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">DEFAULT</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-33 option col" data-value="light"
+                                    data-parent="navcolor">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow">
+                                        <div class="figure figure-secondary figure-light top"></div>
+                                        <div class="figure figure-secondary bottom"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">LIGHT</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-33 option col" data-value="dark"
+                                    data-parent="navcolor">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow">
+                                        <div class="figure figure-muted figure-dark top"></div>
+                                        <div class="figure figure-secondary bottom"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">DARK</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mb-5" id="placement">
+                            <label class="mb-3 d-inline-block form-label">Menu Placement</label>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap">
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="horizontal"
+                                    data-parent="placement">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow">
+                                        <div class="figure figure-primary top"></div>
+                                        <div class="figure figure-secondary bottom"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">HORIZONTAL</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="vertical"
+                                    data-parent="placement">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow">
+                                        <div class="figure figure-primary left"></div>
+                                        <div class="figure figure-secondary right"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">VERTICAL</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mb-5" id="behaviour">
+                            <label class="mb-3 d-inline-block form-label">Menu Behaviour</label>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap">
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="pinned"
+                                    data-parent="behaviour">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow">
+                                        <div class="figure figure-primary left large"></div>
+                                        <div class="figure figure-secondary right small"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">PINNED</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="unpinned"
+                                    data-parent="behaviour">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow">
+                                        <div class="figure figure-primary left"></div>
+                                        <div class="figure figure-secondary right"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">UNPINNED</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mb-5" id="layout">
+                            <label class="mb-3 d-inline-block form-label">Layout</label>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap">
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="fluid" data-parent="layout">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow">
+                                        <div class="figure figure-primary top"></div>
+                                        <div class="figure figure-secondary bottom"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">FLUID</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-50 option col" data-value="boxed" data-parent="layout">
+                                    <div class="card rounded-md p-3 mb-1 no-shadow">
+                                        <div class="figure figure-primary top"></div>
+                                        <div class="figure figure-secondary bottom small"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">BOXED</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mb-5" id="radius">
+                            <label class="mb-3 d-inline-block form-label">Radius</label>
+                            <div class="row d-flex g-3 justify-content-between flex-wrap">
+                                <a href="#" class="flex-grow-1 w-33 option col" data-value="rounded"
+                                    data-parent="radius">
+                                    <div class="card rounded-md radius-rounded p-3 mb-1 no-shadow">
+                                        <div class="figure figure-primary top"></div>
+                                        <div class="figure figure-secondary bottom"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">ROUNDED</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-33 option col" data-value="standard"
+                                    data-parent="radius">
+                                    <div class="card rounded-md radius-regular p-3 mb-1 no-shadow">
+                                        <div class="figure figure-primary top"></div>
+                                        <div class="figure figure-secondary bottom"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">STANDARD</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="flex-grow-1 w-33 option col" data-value="flat" data-parent="radius">
+                                    <div class="card rounded-md radius-flat p-3 mb-1 no-shadow">
+                                        <div class="figure figure-primary top"></div>
+                                        <div class="figure figure-secondary bottom"></div>
+                                    </div>
+                                    <div class="text-muted text-part">
+                                        <span class="text-extra-small align-middle">FLAT</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -935,7 +1192,7 @@
     <!-- Theme Settings Modal End -->
     <!-- Niches Modal Start -->
     <div class="modal fade modal-right scroll-out-negative" id="niches" data-bs-backdrop="true" tabindex="-1"
-         role="dialog" aria-labelledby="niches" aria-hidden="true">
+        role="dialog" aria-labelledby="niches" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable full" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -952,18 +1209,18 @@
     </div>
     <!-- Niches Modal End -->
     <!-- Theme Settings & Niches Buttons Start -->
-    <div class="settings-buttons-container" style="display: none;"> 
+    <div class="settings-buttons-container">
         <button type="button" class="btn settings-button btn-primary p-0" data-bs-toggle="modal"
-                data-bs-target="#settings" id="settingsButton">
+            data-bs-target="#settings" id="settingsButton">
             <span class="d-inline-block no-delay" data-bs-delay="0" data-bs-offset="0,3" data-bs-toggle="tooltip"
-                  data-bs-placement="left" title="Settings">
+                data-bs-placement="left" title="Settings">
                 <i data-acorn-icon="paint-roller" class="position-relative"></i>
             </span>
         </button>
         <button type="button" class="btn settings-button btn-primary p-0" data-bs-toggle="modal"
-                data-bs-target="#niches" id="nichesButton">
+            data-bs-target="#niches" id="nichesButton">
             <span class="d-inline-block no-delay" data-bs-delay="0" data-bs-offset="0,3" data-bs-toggle="tooltip"
-                  data-bs-placement="left" title="Niches">
+                data-bs-placement="left" title="Niches">
                 <i data-acorn-icon="toy" class="position-relative"></i>
             </span>
         </button>
@@ -971,27 +1228,27 @@
     <!-- Theme Settings & Niches Buttons End -->
     <!-- Search Modal Start -->
     <div class="modal fade modal-under-nav modal-search modal-close-out" id="searchPagesModal" tabindex="-1"
-         role="dialog" aria-hidden="true">
+        role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header border-0 p-0">
                     <button type="button" class="btn-close btn btn-icon btn-icon-only btn-foreground"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body ps-5 pe-5 pb-0 border-0">
                     <input id="searchPagesInput"
-                           class="form-control form-control-xl borderless ps-0 pe-0 mb-1 auto-complete" type="text"
-                           autocomplete="off" />
+                        class="form-control form-control-xl borderless ps-0 pe-0 mb-1 auto-complete" type="text"
+                        autocomplete="off" />
                 </div>
                 <div class="modal-footer border-top justify-content-start ps-5 pe-5 pb-3 pt-3 border-0">
                     <span class="text-alternate d-inline-block m-0 me-3">
                         <i data-acorn-icon="arrow-bottom" data-acorn-size="15"
-                           class="text-alternate align-middle me-1"></i>
+                            class="text-alternate align-middle me-1"></i>
                         <span class="align-middle text-medium">Navigate</span>
                     </span>
                     <span class="text-alternate d-inline-block m-0 me-3">
                         <i data-acorn-icon="arrow-bottom-left" data-acorn-size="15"
-                           class="text-alternate align-middle me-1"></i>
+                            class="text-alternate align-middle me-1"></i>
                         <span class="align-middle text-medium">Select</span>
                     </span>
                 </div>
@@ -1035,8 +1292,8 @@
     <script src="js/cs/autocomplete.custom.js"></script>
 
     <script src="js/cs/datatable.extend.js"></script>
-    <!--script src="js/cs/responsivetab.js"></script -->
-    
+     <!-- <script src="js/cs/responsivetab.js"></script> -->
+
     <!-- Vendor Scripts End -->
 
     <script src="js/modulePool.js"></script>
@@ -1052,14 +1309,13 @@
     <!-- Template Base Scripts End -->
     <!-- Page Specific Scripts Start -->
 
-
     <script src="js/common.js"></script>
     <script src="js/scripts.js"></script>
     <!-- <script src="js/routing.js"></script> -->
 
     <!-- script src="js/pages/data.sales.paged.js"></!--script -->
-    <script src="js/pages/data.race.masters.js"></script>
-    <!-- Page Specific Scripts End -->
+    <script src="js/pages/import.race.masters.js"></script>
+   <!-- Page Specific Scripts End -->
 </body>
 
 </html>

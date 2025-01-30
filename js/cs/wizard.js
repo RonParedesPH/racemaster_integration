@@ -25,7 +25,7 @@
  *
  */
 
-class Wizard {
+export default class Wizard {
   get options() {
     return {
       selected: 0,
@@ -134,7 +134,53 @@ class Wizard {
   _showCurrent() {
     this._checkButtons();
     this._checkPreviousOnes();
-    jQuery(this.steps[this.currentIndex].link).tab('show');
+    //jQuery(this.steps[this.currentIndex].link).tab('show');
+
+    let activeItem = -1
+    for (let i = 0; i < this.totalSteps; i++) {
+      if(this.steps[i].link.classList.contains('active'))
+        activeItem = i
+    }
+    // disable active
+    if (this.currentIndex !== activeItem) {
+      if (activeItem !== -1) {
+        let elid = document.querySelector(this.steps[activeItem].link.getAttribute('href'))
+
+        if(elid.classList.contains('show'))
+          elid.classList.remove('show')    
+        if(elid.classList.contains('active'))
+          elid.classList.remove('active')  
+
+        if(this.steps[activeItem].link.classList.contains('show'))
+          this.steps[activeItem].link.classList.remove('show')    
+        if(this.steps[activeItem].link.classList.contains('active'))
+          this.steps[activeItem].link.classList.remove('active')    
+
+        this.steps[activeItem].link.setAttribute('aria-selected',"false")
+      }
+    }
+    // set current active
+    if (!this.steps[this.currentIndex].link.classList.contains('active')) {
+      let elid = document.querySelector(this.steps[this.currentIndex].link.getAttribute('href'))
+      
+      if(!elid.classList.contains('active'))
+        elid.classList.add('active')       
+      if(!elid.classList.contains('show'))
+        elid.classList.add('show')    
+
+      if(!this.steps[this.currentIndex].link.classList.contains('show'))
+        this.steps[this.currentIndex].link.classList.add('show')    
+      if(!this.steps[this.currentIndex].link.classList.contains('active'))
+        this.steps[this.currentIndex].link.classList.add('active')   
+
+      this.steps[this.currentIndex].link.setAttribute('aria-selected',"true")
+  
+    }
+
+
+      
+    //(this.steps[this.currentIndex].link).element.classList.add('d-visible')
+    //document.querySelector(  this.steps[this.currentIndex].link.getAttribute("href")).classList.add("d-block")
   }
 
   _checkPreviousOnes() {
@@ -243,3 +289,5 @@ class Wizard {
     this._uncheckAll();
   }
 }
+
+

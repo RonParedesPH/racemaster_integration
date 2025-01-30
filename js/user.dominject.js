@@ -193,21 +193,39 @@ class UserDomInject {
                 if (templat.length)
                     items.push(templat.replace('^--', ''));
 
+                let kite = '';
                 if (items.length) {
                     items.forEach((t) => {
-                        let e = document.createElement('li');
-                        //e.classList.add("dropdown");
-                        e.innerHTML = t.replace('^--', '').trim();
-                        them.appendChild(e);
+                        // let e = document.createElement('li');
+                        // //e.classList.add("dropdown");
+                        // e.innerHTML = t.replace('^--', '').trim();
+                        // them.appendChild(e);
+                        kite += '<li>' + t + '</li>';
 
                     });
                     //const n = new Nav(document.getElementById("nav"));
                     //n._addListeners();
                 }
-                //this.menuPlainOuter = this.element.querySelector('#menu').outerHTML;
-                console.log('user menu at userDomInject - Ok')
 
+                const block = function(delay) {
+                    console.log('delay at ' + delay)
+                    if (window.nav.menuPlainInner !== undefined) {
+                        const a = window.nav.menuPlainOuter.split(window.nav.menuPlainInner);
+                        window.nav.menuPlainOuter = a[0] + window.nav.menuPlainInner + kite + a[1];
+                        window.nav.RedrawMenuPlacement();                  
+                    } 
+                    else console.log('called while undefined.' )
+                }
 
+                if (window.nav.menuPlainInner !== undefined) {
+                    block(0);
+                }
+                else 
+                    setTimeout( 
+                        () =>  { block(200) }, 
+                        200);
+
+                 console.log('user menu at userDomInject - Ok')
             }
         }
         // else

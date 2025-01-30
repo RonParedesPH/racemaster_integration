@@ -28,9 +28,12 @@ class Nav {
     if (!element) {
       return;
     }
+    window["nav"] = this;    
+    
     this.settings = Object.assign(this.options, options);
     this.settings = Object.assign(this.settings, element.dataset);
     this.element = element;
+
     this._init();
   }
 
@@ -149,6 +152,10 @@ class Nav {
 
   // Converts menu ul li structure to Bootstrap collapsable and appends it in the #menu
   _addVerticalMenu() {
+    // if (this.menuPlainInner !== this.element.querySelector('#menu').innerHTML) {
+    //   this.menuPlainOuter = this.element.querySelector('#menu').outerHTML;
+    //   this.menuPlainInner = this.element.querySelector('#menu').innerHTML;
+    // }
     document.querySelector('#menu').remove();
     this._initMenuVariables();
     const menu = this.menuVertical;
@@ -294,6 +301,10 @@ class Nav {
 
   // Converts menu ul li structure to Bootstrap dropdowns and appends it in the #menu
   _addHorizontalMenu() {
+    // if (this.menuPlainInner !== this.element.querySelector('#menu').innerHTML) {
+    //   this.menuPlainOuter = this.element.querySelector('#menu').outerHTML;
+    //   this.menuPlainInner = this.element.querySelector('#menu').innerHTML;
+    // }
     document.querySelector('#menu').remove();
     this._initMenuVariables();
     const menu = this.menuHorizontal;
@@ -530,14 +541,25 @@ class Nav {
     }
   }
 
+  RedrawMenuPlacement() {
+    this._initMenuPlacement(true);
+  }
+
   // Decides which type of menu to add based on the parameters or the current window size.
   // placementStatus:
   // 1 {selected: 'horizontal',  dimension: 'mobile',         html-attr: 'horizontal', render: 'vertical'}
   // 2 {selected: 'horizontal',  dimension: 'tablet|desktop', html-attr: 'horizontal', render: 'horizontal'}
   // 3 {selected: 'vertical',    dimension: 'mobile',         html-attr: 'horizontal', render: 'vertical' }
   // 4 {selected: 'vertical',    dimension: 'tablet|desktop', html-attr: 'vertical',   render: 'vertical' }
-  _initMenuPlacement() {
+  _initMenuPlacement(redraw) {
     var windowWidth = window.innerWidth;
+    if (redraw !== undefined) {
+      if (this.placementStatus > 2)
+          this.placementStatus = this.placementStatus ===3 ? 4 :3;
+        else 
+         this.placementStatus = this.placementStatus ===1 ? 2 :1;
+    }
+
     var previousPlacementStatus = this.placementStatus;
     this._hideOtherDropdownsVertical();
     if (this.selectedMenuPlacement === 'horizontal') {
